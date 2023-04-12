@@ -128,7 +128,7 @@ nav{
 
 .chars {
     max-width: 926px;
-    margin: 0 auto;
+    margin: 150px auto;
     display: flow-root;
     font-size: 0;
     overflow: hidden;   /* side effect, 원래 의도는 아니지만 어쨋든 해결됨 */
@@ -177,3 +177,4 @@ aside {
     right: 0;
     top: 0;
 }
+
