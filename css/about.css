@@ -1,0 +1,188 @@
+@import "./reset.css";
+
+body {
+    font-family: "Maven Pro", "Noto Sans KR", sans-serif
+}
+/*
+body::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #b7d4f0;
+    position: fixed;
+    left: 0;
+    top: 206px;
+}
+*/
+/*
+.header-wrap {
+    max-width: 1190px; 
+    margin: 0 auto;
+}
+*/
+.header-top {
+    width: 1190px; /* 블럭요소의 기본 폭 */
+    margin: 0 auto;
+    position: relative;
+    height: 210px;
+}
+
+.links {
+    position: absolute;
+    left: 0;
+    top: 70px;
+}
+
+.links a {
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
+}
+.links a:hover {
+    color: #000;
+    transition: all .4s;
+}
+.links a::after {
+    content: '|';
+    margin: 0 15px;
+}
+.links a:nth-last-child(1)::after {
+    content: '';
+    margin: 0;
+}
+
+.main-logo {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -150px;
+}
+
+.sns {
+    position: absolute;
+    right: 0;
+    top: 70px;
+}
+
+nav{
+    border-top: 2px solid #f9c02d;
+    position: relative;
+    top:-3px;
+}
+
+#gnb {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* 선택자 선택자 : 후손 선택자
+   선택자 > 선택자 : 자손 선택자 */
+#gnb > li {
+    display: inline-block;
+    padding: 20px 0;
+    margin: 0 15px;
+}
+
+#gnb li a {
+    font-size: 1.125rem;
+    font-weight: 700;  /* 100~900 단위없는 숫자값, thin, bold, bolder 키워드 */
+    color: #f9c02d;
+    transition: all .2s ease-in-out;
+}
+
+#gnb li a:hover{
+    color: black;
+}
+
+
+
+#movie {    
+    position: absolute;    
+    width: 100%;    
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.main-character {
+    position: absolute;
+    left: 50%;
+    margin-left: -180px;
+    bottom: -100px;
+}
+
+.article-title {
+    text-align: center;
+    margin: 150px 0 20px 0;
+    font-size: 30px;
+    text-transform: capitalize;  /* 첫글자 대문자 */
+    color: #f9c02d;
+    font-weight: 900;
+}
+
+.chars {
+    max-width: 926px;
+    margin: 0 auto;
+    display: flow-root;
+    font-size: 0;
+    overflow: hidden;   /* side effect, 원래 의도는 아니지만 어쨋든 해결됨 */
+}
+
+.chars img {
+    border: 1px solid #f9c02d;
+}
+
+aside {
+    background: #f9c02d;
+}
+
+.event {
+    max-width: 920px;
+    margin: 50px auto;
+}
+
+.footer-wrap {
+    width: 1190px;
+    margin: 50px auto;
+    position: relative;
+}
+
+.extra-links li {
+    display: inline-block;
+}
+
+.extra-links {
+    font-size: 0.9375rem;
+    color: #888;
+}
+
+.copyright {
+    font-size: 0.6875rem;
+    color: #888;
+    margin-bottom: 50px;
+}
+
+.sub-logo {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.visual{
+    display: flex;
+    max-width: 1190px;
+    margin: 10px auto;
+}
+.movie_intro {
+    margin-bottom: 30px;
+}
+.movie_intro{
+   font-weight: bold;
+}
+
+.cover_image {
+    width: 1190px;
+    margin: 0 32%;
+    
+}
